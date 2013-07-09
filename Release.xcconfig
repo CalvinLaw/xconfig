@@ -1,9 +1,7 @@
 //
 //  Release.xcconfig
-//  DIY
 //
 //  Created by Patrick Piemonte on 3/26/13.
-//  Copyright (c) 2013 DIY. All rights reserved.
 //
 
 #include "Base.xcconfig"
