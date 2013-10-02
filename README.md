@@ -1,12 +1,17 @@
-xconfig
-===========
+## xconfig
 
-configuration files for Xcode projects
+This repository hosts the configuration files for iOS Xcode projects.
 
-This repository hosts the configuration files we use for building our iOS apps at DIY. Projects are built in two separate modes, Debug or Release. Each mode specifies it's own set of criteria. Shared criteria is defined in Base.xconfig and inherited. This allows one to specify build configurations without using the Xcode interface but also to easily share configuration settings across projects.
+### Instructions
 
-As of Xcode 4.6.1, xconfig files are specified within a project's 'Info' tab, under 'Configurations'.
+Projects are built in separate schemes: Debug, Release, and Test.
 
-References
+Each scheme specifies it's own set of criteria. Shared criteria is defined in Base.xconfig and inherited by the files. These files allows one to specify build configurations without having to place information into the Xcode Project Editor but also to easily share configuration settings across multiple projects.
 
-http://developer.apple.com/library/ios/#recipes/xcode_help-project_editor/Articles/BasingBuildConfigurationsonConfigurationFiles.html
+### Usage
+
+As of Xcode 5.0, xconfig files can be specified for a project by going to the Project Editor's 'Info' tab, then 'Configurations'.
+
+### References
+
+https://developer.apple.com/library/ios/recipes/xcode_help-project_editor/Articles/BasingBuildConfigurationsonConfigurationFiles.html
