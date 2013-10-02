@@ -1,10 +1,10 @@
 ## xconfig
 
-This repository hosts the configuration files for iOS Xcode projects.
+This repository hosts configuration files for iOS Xcode projects.
 
 ### Instructions
 
-Projects are built in separate schemes: Debug, Release, and Test.
+Projects may be built with separate schemes: Debug, Release, and Test.
 
 Each scheme specifies it's own set of criteria. Shared criteria is defined in Base.xconfig and inherited by the files. These files allows one to specify build configurations without having to place information into the Xcode Project Editor but also to easily share configuration settings across multiple projects.
 
