@@ -1,17 +1,21 @@
 ## xconfig
 
-This repository hosts configuration files for iOS Xcode projects.
+A pretty good project starts with a pretty good configuration. These files define iOS build configurations for Xcode without having to go into the Xcode interface to make changes. Also, they can be easily shared across projects.
 
 ### Instructions
 
 Projects may be built with separate schemes: Debug, Release, and Test.
 
-Each scheme specifies it's own set of criteria. Shared criteria is defined in Base.xconfig and inherited by the files. These files allows one to specify build configurations without having to place information into the Xcode Project Editor but also to easily share configuration settings across multiple projects.
+Each scheme (Debug/Release/Test) specifies it's own set of criteria. Criteria defined in Base.xconfig is shared and inherited by the other files.
+
+Check out a few of my other projects for an [example](https://github.com/piemonte/PBJVision/).
 
 ### Usage
 
-As of Xcode 5.0, xconfig files can be specified for a project by going to the Project Editor's 'Info' tab, then 'Configurations'.
+As of Xcode 5.0, these xconfig files can be setup for a project by going to the Project Editor's 'Info' tab, then 'Configurations'.
+
+If you can adopt these early on, your project stability and quality will greatly benefit. If you would like to adopt these for an existing project, I recommend commenting out each line and slowly enabling them as you fix code.
 
 ### References
 
-https://developer.apple.com/library/ios/recipes/xcode_help-project_editor/Articles/BasingBuildConfigurationsonConfigurationFiles.html
+[Project Editor Help: Add a Build Configuration](https://developer.apple.com/library/ios/recipes/xcode_help-project_editor/Articles/BasingBuildConfigurationsonConfigurationFiles.html)
